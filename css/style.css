@@ -1,0 +1,13 @@
+.link-card {
+    text-decoration: none;
+}
+
+.link-card:hover > div > div.card-body {
+    background-color: rgb(218, 218, 218);
+    transition: all 0.3s;
+}
+
+.img-card-size {
+    width: 80%;
+    margin: auto;
+}
