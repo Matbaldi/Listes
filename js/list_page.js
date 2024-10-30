@@ -1,6 +1,8 @@
 var platform = sessionStorage.getItem('choice');
+var img = sessionStorage.getItem('img');
 
 document.getElementById("page-title").innerHTML = platform;
+document.getElementById("img-list").src = "." + img;
 
 function textUnderscoreMin(text) {
     return text.replace(/ /g, '_').toLowerCase();
