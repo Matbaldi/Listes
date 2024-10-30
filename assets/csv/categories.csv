@@ -1,0 +1,13 @@
+﻿ID,NAME,ALT,URL
+1,Jeux NES,Logo NES,./assets/images/logo_nes.webp
+2,Jeux SNES,Logo SNES,./assets/images/logo_snes.webp
+3,Jeux Nintendo 64,Logo N64,./assets/images/logo_n64.webp
+4,Jeux Gamecube,Logo Gamecube,./assets/images/logo_gamecube.webp
+5,Jeux Switch,Logo Switch,./assets/images/logo_switch.webp
+6,Jeux Gameboy,Logo Gameboy,./assets/images/logo_gameboy.webp
+7,Jeux Gameboy Color,Logo Gameboy Color,./assets/images/logo_gameboy_color.webp
+8,Jeux Gameboy Advance,Logo Gameboy Advance,./assets/images/logo_gba.webp
+9,Jeux DS,Logo DS,./assets/images/logo_ds.webp
+10,Jeux 3DS,Logo 3DS,./assets/images/logo_3ds.webp
+10,Figurine Skylanders,Logo Skylanders,./assets/images/logo_skylanders.webp
+11,Lego,Logo Lego,./assets/images/logo_lego.webp
