@@ -64,8 +64,3 @@ function save(name) {
     sessionStorage.setItem('choice', name);
     location.href = "./html/list_page.html";
 }
-
-
-/*function textUnderscoreMin(text) {
-    return text.replace(/ /g, '_').toLowerCase();
-}*/
