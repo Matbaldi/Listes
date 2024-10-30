@@ -29,8 +29,9 @@ function createNewCard(array) {
     newCol.className = "col";
 
     let newLink = document.createElement("a");
-    newLink.href= "#";
+    newLink.href = "#";
     newLink.className = "link-card";
+    newLink.onclick = function() {save(array[1]); return false;}
 
     let newCard = document.createElement("div");
     newCard.className = "card h-100";
@@ -58,3 +59,13 @@ function createNewCard(array) {
     
     row.appendChild(newCol);
 }
+
+function save(name) {
+    sessionStorage.setItem('choice', name);
+    location.href = "./html/list_page.html";
+}
+
+
+/*function textUnderscoreMin(text) {
+    return text.replace(/ /g, '_').toLowerCase();
+}*/

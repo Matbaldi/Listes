@@ -11,3 +11,14 @@
     width: 80%;
     margin: auto;
 }
+
+.home-link {
+    color: rgb(160, 160, 160);
+    text-decoration: none;
+}
+
+.home-link:hover {
+    color: rgb(87, 87, 87);
+    text-decoration: underline;
+    transition: all 0.3s;
+}
