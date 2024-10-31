@@ -11,6 +11,7 @@ function textUnderscoreMin(text) {
 var csvPlatform = textUnderscoreMin(platform)
 
 var row = document.getElementById("row");
+var parentNoItems = document.getElementById("parent-no-items");
 
 var xhttp = new XMLHttpRequest();
 xhttp.onreadystatechange = readCSVFile;
@@ -29,10 +30,19 @@ function readCSVFile() {
         // Initialiser le tableau pour stocker les données
         const tableauCSV = lignes.map(ligne => ligne.split(','));
         array = tableauCSV;
+        var j = 0;
         for (let i=1; i<array.length; i++) {
             if (array[i][0] == csvPlatform) {
                 createNewCard(array[i])
+                j++; 
             }
+        }
+        if (j == 0) {
+            let noItems = document.createElement("h3");
+            noItems.innerHTML = "Il n'y a pas d'éléments dans cette liste"
+            noItems.className = "text-center pt-5"
+            parentNoItems.appendChild(noItems);
+            row.remove();
         }
 
     }  
