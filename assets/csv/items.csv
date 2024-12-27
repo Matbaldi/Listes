@@ -17,13 +17,13 @@ jeux_snes,Super Metroid,60-70€,Cartouche Super Metroid,https://cdn.mobygames.c
 jeux_snes,Star Wing,10-15€,Cartouche Star Wing,https://cdn.mobygames.com/covers/1620050-star-fox-snes-media.jpg
 jeux_snes,The Legend of Zelda : A Link to the Past,30-40€,Cartouche The Legend of Zelda : A Link to the Past,https://cdn.mobygames.com/covers/4914601-the-legend-of-zelda-a-link-to-the-past-snes-media.jpg
 jeux_switch,Balatro,29.99€,Jaquette Balatro,https://m.media-amazon.com/images/I/71PBkJClLeL._AC_SL1500_.jpg
-jeux_switch,Celeste (Quasi impossible à trouver),29.99€,Jaquette Celeste,https://m.media-amazon.com/images/I/81juULyaaPL._AC_SL1500_.jpg
+jeux_switch,Celeste<br>(Quasi impossible à trouver),29.99€,Jaquette Celeste,https://m.media-amazon.com/images/I/81juULyaaPL._AC_SL1500_.jpg
 jeux_switch,Metroid Prime Remastered,32.99€,Jaquette Metroid Prime Remastered,https://m.media-amazon.com/images/I/71PfABuNzzL._AC_SL1500_.jpg
 jeux_switch,Pikmin 4,44.99€,Jaquette Pikmin 4,https://m.media-amazon.com/images/I/812MwoKU9DL._AC_SL1500_.jpg
-jeux_switch,Super Mario 3D World + Bowser's Fury (Si promo intéressante),44.16€,Jaquette Super Mario 3D World + Bowser's Fury,https://m.media-amazon.com/images/I/81BTFAri4RL._AC_SL1500_.jpg
+jeux_switch,Super Mario 3D World + Bowser's Fury<br>(Si promo intéressante),44.16€,Jaquette Super Mario 3D World + Bowser's Fury,https://m.media-amazon.com/images/I/81BTFAri4RL._AC_SL1500_.jpg
 jeux_switch,Mario VS. Donkey Kong,36.79€,Jaquette Mario VS. Donkey Kong,https://m.media-amazon.com/images/I/81BH9UAsLlL.jpg
-jeux_switch,The Binding of Isaac: Afterbirth + (Quasi impossible à trouver),59.99€,Jaquette The Binding of Isaac: Afterbirth +,https://m.media-amazon.com/images/I/81wFbIFlGNL.jpg
-jeux_switch,Tunic (Si promo intéressante),44.99€,Jaquette Tunic,https://m.media-amazon.com/images/I/61SK7GoGS0L._AC_SL1200_.jpg
+jeux_switch,The Binding of Isaac: Afterbirth +<br>(Quasi impossible à trouver),59.99€,Jaquette The Binding of Isaac: Afterbirth +,https://m.media-amazon.com/images/I/81wFbIFlGNL.jpg
+jeux_switch,Tunic<br>(Si promo intéressante),44.99€,Jaquette Tunic,https://m.media-amazon.com/images/I/61SK7GoGS0L._AC_SL1200_.jpg
 jeux_switch,Wario Ware Get It Together!,34.95€,Jaquette Wario Ware Get It Together!,https://m.media-amazon.com/images/I/81NgkqJXocL.jpg
 jeux_switch,Wario Ware Move It,36.99€,Jaquette Wario Ware Move It,https://m.media-amazon.com/images/I/71GJGB4Pb0L.jpg
 sets_lego,LEGO | BrickHeadz | Sonic the Hedgehog™ | 40627,9.99€,Photo du set,https://www.lego.com/cdn/cs/set/assets/bltbfde534d2f7588d6/40627.png?format=webply&fit=bounds&quality=75&width=1200&height=1200&dpr=1
@@ -68,5 +68,14 @@ jeux_ds,Donkey Kong Jungle Climber,40€,Jaquette Donkey Kong Jungle Climber,htt
 jeux_3ds,Professeurs Layton et le masque des miracles,15-17€,Jaquette Professeurs Layton et le masque des miracles,https://cdn.mobygames.com/covers/9056128-professor-layton-and-the-miracle-mask-nintendo-3ds-front-cover.jpg
 jeux_3ds,Professeurs Layton et l'héritage des Aslantes,15-20€,Jaquette Professeurs Layton et l'héritage des Aslantes,https://cdn.mobygames.com/covers/8957955-professor-layton-and-the-azran-legacy-nintendo-3ds-front-cover.png
 jeux_3ds,Mario & Luigi Superstar Saga + Les sbires de Bowser,25-30€,Jaquette Mario & Luigi Superstar Saga + Les sbires de Bowser,https://cdn.mobygames.com/covers/1866939-mario-luigi-superstar-saga-bowsers-minions-nintendo-3ds-front-co.png
-jeux_3ds,Inazuma Eleven Go Galaxy Supernova (Import Japon),50-55€,Jaquette Inazuma Eleven Go Galaxy Supernova,https://m.media-amazon.com/images/I/61DSoYJjivL._AC_.jpg
-jeux_3ds,Minecraft New Nintendo 3DS Edition (Import USA),35€,Jaquette Minecraft New Nintendo 3DS Edition,https://cdn.mobygames.com/covers/2943709-minecraft-new-nintendo-3ds-edition-new-nintendo-3ds-front-cover.png
+jeux_3ds,Inazuma Eleven Go Galaxy Supernova<br>(Import Japon),50-55€,Jaquette Inazuma Eleven Go Galaxy Supernova,https://m.media-amazon.com/images/I/61DSoYJjivL._AC_.jpg
+jeux_3ds,Minecraft New Nintendo 3DS Edition<br>(Import USA),35€,Jaquette Minecraft New Nintendo 3DS Edition,https://cdn.mobygames.com/covers/2943709-minecraft-new-nintendo-3ds-edition-new-nintendo-3ds-front-cover.png
+jeux_nintendo_64,Super Mario 64,15-20€,Cartouche Super Mario 64,https://cdn.mobygames.com/covers/6606851-super-mario-64-nintendo-64-media.jpg
+jeux_nintendo_64,Mario Kart 64,25-35€,Cartouche Mario Kart 64,https://cdn.mobygames.com/covers/207865-mario-kart-64-nintendo-64-media.jpg
+jeux_nintendo_64,Donkey Kong 64<br>(Si j'ai l'expension PAK),20-40€,Cartouche Donkey Kong 64,https://cdn.mobygames.com/covers/4737710-donkey-kong-64-nintendo-64-media.jpg
+jeux_nintendo_64,The Legend of Zelda : Majora's Mask<br>(Si j'ai l'expension PAK),90€,Cartouche The Legend of Zelda : Majora's Mask,https://cdn.mobygames.com/covers/4517148-the-legend-of-zelda-majoras-mask-nintendo-64-media.jpg
+jeux_nintendo_64,Banjo-Kazooie,20-25€,Cartouche Banjo-Kazooie,https://cdn.mobygames.com/covers/6615930-banjo-kazooie-nintendo-64-media.jpg
+jeux_nintendo_64,Banjo-Tooie,70€,Cartouche Banjo-Tooie,https://cdn.mobygames.com/covers/1321561-banjo-tooie-nintendo-64-media.jpg
+jeux_nintendo_64,Yoshi's Story,20-30€,Cartouche Yoshi's Story,https://cdn.mobygames.com/covers/5531040-yoshis-story-nintendo-64-media.jpg
+jeux_nintendo_64,Kirby 64 : the Crystal Shards,80-100€,Cartouche Kirby 64 : the Crystal Shards,https://cdn.mobygames.com/covers/5589880-kirby-64-the-crystal-shards-nintendo-64-media.jpg
+jeux_nintendo_64,Paper Mario,+ de 100€,Cartouche Paper Mario,https://cdn.mobygames.com/covers/1442743-paper-mario-nintendo-64-media.jpg
