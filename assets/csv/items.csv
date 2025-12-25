@@ -49,7 +49,6 @@ sets_lego,LEGO | Creator | Carte postale de New York | 40519,14.99€,Photo du s
 sets_lego,LEGO | BrickHeadz | Knuckles et Shadow | 40672,19.99€,Photo du set,https://www.lego.com/cdn/cs/set/assets/bltb0f483b0df6f4507/40672.png?format=webply&fit=bounds&quality=75&width=1200&height=1200&dpr=1
 sets_lego,LEGO | The Botanical Collection | Hibiscus | 10372,69.99€,Photo du set,https://www.lego.com/cdn/cs/set/assets/blteaa1b277ce8483e2/10372_Prod_1.png?format=webply&fit=bounds&quality=75&width=1200&height=1200&dpr=1
 sets_lego,LEGO | The Botanical Collection | Petites plantes souriantes | 10349,19.99€,Photo du set,https://www.lego.com/cdn/cs/set/assets/blt6921020c0cfcc903/10349_Prod_en-gb.png?format=webply&fit=bounds&quality=75&width=1200&height=1200&dpr=1
-sets_lego,LEGO | The Botanical Collection | Bonsaï d'érable rouge du Japon | 10348,59.99€,Photo du set,https://www.lego.com/cdn/cs/set/assets/bltd4a3e6e4bf1b680c/10348_Prod_en-gb.png?format=webply&fit=bounds&quality=75&width=1200&height=1200&dpr=1
 sets_lego,LEGO | The Botanical Collection | Mini bonsaïs | 10373,59.99€,Photo du set,https://www.lego.com/cdn/cs/set/assets/blt2c4d86926d510d45/10373_Prod_en-gb.png?format=webply&fit=bounds&quality=75&width=1200&height=1200&dpr=1
 sets_lego,LEGO | Ideas | La collection d’insectes | 21342,79.99€,Photo du set,https://www.lego.com/cdn/cs/set/assets/blte32d946cf23b2e5c/21342.png?format=avif&fit=bounds&quality=45&width=960&height=960&dpr=1.5
 sets_lego,LEGO | Icons | L’étoile de Noël | 10370,49.99€,Photo du set,https://www.lego.com/cdn/cs/set/assets/blt5b9064fcb12ba88b/10370_Prod.png?format=webply&fit=bounds&quality=75&width=1200&height=1200&dpr=1
@@ -67,11 +66,6 @@ sets_lego,LEGO | Super Mario™ | Bloc point d'interrogation Super Mario 64™ |
 sets_lego,LEGO | Super Mario™ | Mario Kart™ : Mario et kart standard | 72037,169.99€,Photo du set,https://www.lego.com/cdn/cs/set/assets/blt9b9bd9113f7f11d9/72037_Prod_en-gb.png?format=webply&fit=bounds&quality=75&width=1200&height=1200&dpr=1
 sets_lego,LEGO | Icons | Jeu d’arcade PAC-MAN | 10323,269.99€,Photo du set,https://www.lego.com/cdn/cs/set/assets/blt74da473b5ba874fe/10323.png?format=webply&fit=bounds&quality=75&width=1200&height=1200&dpr=1
 sets_lego,LEGO | The Legend of Zelda™ | Vénérable Arbre Mojo 2-en-1 | 77092,299.99€,Photo du set,https://www.lego.com/cdn/cs/set/assets/blt6a8cb14aa4efef08/77092.png?format=webply&fit=bounds&quality=75&width=1200&height=1200&dpr=1
-jeux_ds,Pokémon Blanche,50€,Jaquette Pokémon Blanche,https://cdn.mobygames.com/covers/2162246-pokemon-white-version-nintendo-ds-front-cover.jpg
-jeux_ds,Pokémon Noire 2,85-90€,Jaquette Pokémon Noire 2,https://cdn.mobygames.com/covers/2857849-pokemon-black-version-2-nintendo-ds-front-cover.jpg
-jeux_ds,Pokémon Perle,40-45€,Jaquette Pokémon Perle,https://cdn.mobygames.com/covers/1548367-pokemon-pearl-version-nintendo-ds-front-cover.jpg
-jeux_ds,Pokémon Diamant,40-45€,Jaquette Pokémon Diamant,https://cdn.mobygames.com/covers/1230211-pokemon-diamond-version-nintendo-ds-front-cover.jpg
-jeux_ds,Pokémon HeartGold,75-85€,Jaquette Pokémon HeartGold,https://cdn.mobygames.com/covers/6125451-pokemon-heartgold-version-nintendo-ds-front-cover.jpg
 jeux_ds,Wario Ware Touched,14-17€,Jaquette Wario Ware Touched,https://cdn.mobygames.com/covers/4812207-warioware-touched-nintendo-ds-front-cover.jpg
 jeux_ds,Sonic Rush,10-12€,Jaquette Sonic Rush,https://cdn.mobygames.com/covers/4431573-sonic-rush-nintendo-ds-front-cover.jpg
 jeux_ds,Mario Slam Basketball,11-14€,Jaquette Mario Slam Basketball,https://cdn.mobygames.com/covers/4628036-mario-hoops-3-on-3-nintendo-ds-front-cover.jpg
@@ -87,15 +81,20 @@ jeux_ds,Kirby Super Star Ultra,100€,Jaquette Kirby Super Star Ultra,https://cd
 jeux_ds,Donkey Kong Jungle Climber,40€,Jaquette Donkey Kong Jungle Climber,https://cdn.mobygames.com/covers/9230219-dk-jungle-climber-wii-u-front-cover.jpg
 jeux_ds,Kingdom Hearts Re:coded,45€,Jaquette Kingdom Hearts Re:coded,https://cdn.mobygames.com/covers/6215986-kingdom-hearts-recoded-nintendo-ds-front-cover.jpg
 jeux_ds,Kingdom Hearts 358/2 Days,25-30€,Jaquette Kingdom Hearts 358/2 Days,https://cdn.mobygames.com/covers/6520956-kingdom-hearts-3582-days-nintendo-ds-front-cover.jpg
-jeux_3ds,Pokémon Y,20-30€,Jaquette Pokémon Y,https://cdn.mobygames.com/covers/3664614-pokemon-y-nintendo-3ds-front-cover.jpg
-jeux_3ds,Pokémon Saphir Alpha,35-40€,Jaquette Pokémon Saphir Alpha,https://cdn.mobygames.com/covers/2032023-pokemon-alpha-sapphire-nintendo-3ds-front-cover.jpg
-jeux_3ds,Pokémon Soleil,15-25€,Jaquette Pokémon Soleil,https://cdn.mobygames.com/covers/2491946-pokemon-sun-nintendo-3ds-front-cover.jpg
-jeux_3ds,Pokémon Ultra-Soleil,25-30€,Jaquette Pokémon Ultra-Soleil,https://cdn.mobygames.com/covers/3058991-pokemon-ultra-sun-nintendo-3ds-front-cover.jpg
+jeux_ds,Pokémon Blanche,50€,Jaquette Pokémon Blanche,https://cdn.mobygames.com/covers/2162246-pokemon-white-version-nintendo-ds-front-cover.jpg
+jeux_ds,Pokémon Noire 2,85-90€,Jaquette Pokémon Noire 2,https://cdn.mobygames.com/covers/2857849-pokemon-black-version-2-nintendo-ds-front-cover.jpg
+jeux_ds,Pokémon Perle,40-45€,Jaquette Pokémon Perle,https://cdn.mobygames.com/covers/1548367-pokemon-pearl-version-nintendo-ds-front-cover.jpg
+jeux_ds,Pokémon Diamant,40-45€,Jaquette Pokémon Diamant,https://cdn.mobygames.com/covers/1230211-pokemon-diamond-version-nintendo-ds-front-cover.jpg
+jeux_ds,Pokémon HeartGold,75-85€,Jaquette Pokémon HeartGold,https://cdn.mobygames.com/covers/6125451-pokemon-heartgold-version-nintendo-ds-front-cover.jpg
 jeux_3ds,Puzzle & Dragons Z + Puzzle & Dragons: Super Mario Bros. Edition,10-15€,Jaquette Puzzle & Dragons Z + Puzzle & Dragons: Super Mario Bros. Edition,https://cdn.mobygames.com/covers/9206749-puzzle-dragons-z-puzzle-dragons-super-mario-bros-edition-nintend.jpg
 jeux_3ds,Professeurs Layton et le masque des miracles,15-20€,Jaquette Professeurs Layton et le masque des miracles,https://cdn.mobygames.com/covers/9056128-professor-layton-and-the-miracle-mask-nintendo-3ds-front-cover.jpg
 jeux_3ds,Professeurs Layton et l'héritage des Aslantes,20-25€,Jaquette Professeurs Layton et l'héritage des Aslantes,https://cdn.mobygames.com/covers/8957955-professor-layton-and-the-azran-legacy-nintendo-3ds-front-cover.png
 jeux_3ds,Mario & Luigi Superstar Saga + Les sbires de Bowser,25-30€,Jaquette Mario & Luigi Superstar Saga + Les sbires de Bowser,https://cdn.mobygames.com/covers/1866939-mario-luigi-superstar-saga-bowsers-minions-nintendo-3ds-front-co.png
 jeux_3ds,Inazuma Eleven Go Galaxy Supernova<br>(Import Japon),50-55€,Jaquette Inazuma Eleven Go Galaxy Supernova,https://m.media-amazon.com/images/I/61DSoYJjivL._AC_.jpg
+jeux_3ds,Pokémon Y,20-30€,Jaquette Pokémon Y,https://cdn.mobygames.com/covers/3664614-pokemon-y-nintendo-3ds-front-cover.jpg
+jeux_3ds,Pokémon Saphir Alpha,35-40€,Jaquette Pokémon Saphir Alpha,https://cdn.mobygames.com/covers/2032023-pokemon-alpha-sapphire-nintendo-3ds-front-cover.jpg
+jeux_3ds,Pokémon Soleil,15-25€,Jaquette Pokémon Soleil,https://cdn.mobygames.com/covers/2491946-pokemon-sun-nintendo-3ds-front-cover.jpg
+jeux_3ds,Pokémon Ultra-Soleil,25-30€,Jaquette Pokémon Ultra-Soleil,https://cdn.mobygames.com/covers/3058991-pokemon-ultra-sun-nintendo-3ds-front-cover.jpg
 jeux_nintendo_64,Super Mario 64,15-20€,Cartouche Super Mario 64,https://cdn.mobygames.com/covers/6606851-super-mario-64-nintendo-64-media.jpg
 jeux_nintendo_64,Mario Kart 64,25-35€,Cartouche Mario Kart 64,https://cdn.mobygames.com/covers/207865-mario-kart-64-nintendo-64-media.jpg
 jeux_nintendo_64,Donkey Kong 64<br>(Si j'ai l'expension PAK),20-40€,Cartouche Donkey Kong 64,https://cdn.mobygames.com/covers/4737710-donkey-kong-64-nintendo-64-media.jpg
