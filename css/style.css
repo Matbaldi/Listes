@@ -7,9 +7,39 @@
     transition: all 0.3s;
 }
 
+/* Hauteur uniforme sur toutes les cards de la grille d'accueil */
+#row .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#row .card-body {
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+}
+
+#row .card-title {
+    font-size: 1.1rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.4;
+    margin-bottom: 0;
+}
+
 .img-card-size {
     width: 80%;
     margin: auto;
+    display: block;
 }
 
 .home-link {
@@ -21,4 +51,15 @@
     color: rgb(87, 87, 87);
     text-decoration: underline;
     transition: all 0.3s;
+}
+
+.card img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 576px) {
+    .img-card-size {
+        width: 60%;
+    }
 }

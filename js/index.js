@@ -8,19 +8,13 @@ xhttp.send();
 function readCSVFile() {
     if (this.readyState == 4 && this.status == 200) {
         var file = this.response
-        // Supprimer tous les caractères "\r" du contenu
         const contenuSansCR = file.replace(/\r/g, '');
-
-        // Diviser le contenu en lignes
         const lignes = contenuSansCR.split('\n');
-
-        // Initialiser le tableau pour stocker les données
         const tableauCSV = lignes.map(ligne => ligne.split(','));
         array = tableauCSV;
         for (let i=1; i<array.length; i++) {
             createNewCard(array[i])
         }
-
     }  
 };
 
@@ -49,14 +43,10 @@ function createNewCard(array) {
     newCardTitle.innerHTML = array[1];
 
     newCardBody.appendChild(newCardTitle);
-
     newCard.appendChild(newCardImg);
     newCard.appendChild(newCardBody);
-
     newLink.appendChild(newCard);
-
     newCol.appendChild(newLink);
-    
     row.appendChild(newCol);
 }
 
