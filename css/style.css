@@ -7,17 +7,34 @@
     --text-muted: #88887f;
     --accent: #3d6bce;
     --hover-bg: #f0f0eb;
-    --shadow: 0 2px 8px rgba(0,0,0,0.06);
+    --shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
     --radius: 10px;
 }
 
 body {
     background-color: var(--bg);
     color: var(--text);
-    font-family: 'DM Sans', sans-serif;
+    font-family: 'Syne', sans-serif;
 }
 
-h1, h2 {
+/* Forcer Syne partout, Bootstrap a tendance à l'écraser */
+*,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+.card-title,
+.card-text,
+.card-body {
+    font-family: 'Syne', sans-serif;
+}
+
+h1,
+h2 {
     font-weight: 600;
     color: var(--text);
 }
@@ -42,11 +59,11 @@ h2 {
 }
 
 .link-card:hover .card {
-    box-shadow: 0 6px 20px rgba(0,0,0,0.11);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.11);
     transform: translateY(-2px);
 }
 
-.link-card:hover > div > div.card-body {
+.link-card:hover>div>div.card-body {
     background-color: var(--hover-bg);
     transition: all 0.2s;
     border-radius: 0 0 var(--radius) var(--radius);
