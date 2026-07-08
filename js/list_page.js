@@ -26,10 +26,10 @@ function readCSVFile() {
         const tableauCSV = lignes.map(ligne => ligne.split(','));
         array = tableauCSV;
         var j = 0;
-        for (let i=1; i<array.length; i++) {
+        for (let i = 1; i < array.length; i++) {
             if (array[i][0] == csvPlatform) {
                 createNewCard(array[i])
-                j++; 
+                j++;
             }
         }
         if (j == 0) {
@@ -39,7 +39,7 @@ function readCSVFile() {
             parentNoItems.appendChild(noItems);
             row.remove();
         }
-    }  
+    }
 };
 
 function createNewCard(array) {
@@ -52,7 +52,7 @@ function createNewCard(array) {
     let newCardImg = document.createElement("img");
     newCardImg.src = array[4];
     newCardImg.className = "img-card-size mt-3 mb-3";
-    newCardImg.alt = array[5];
+    newCardImg.alt = array[3];
 
     let newCardBody = document.createElement("div");
     newCardBody.className = "card-body";
@@ -64,8 +64,17 @@ function createNewCard(array) {
     let newCardText = document.createElement("p");
     newCardText.innerHTML = array[2];
 
+    let newCardDate = null;
+    if (array[5] != undefined) {
+        newCardDate = document.createElement("p");
+        newCardDate.innerHTML = "Sortie le " + array[5];
+    }
+
     newCardBody.appendChild(newCardTitle);
     newCardBody.appendChild(newCardText);
+    if (array[5] != undefined) {
+        newCardBody.appendChild(newCardDate);
+    }
     newCard.appendChild(newCardImg);
     newCard.appendChild(newCardBody);
     newCol.appendChild(newCard);

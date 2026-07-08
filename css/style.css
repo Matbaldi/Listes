@@ -17,7 +17,6 @@ body {
     font-family: 'Syne', sans-serif;
 }
 
-/* Forcer Syne partout, Bootstrap a tendance à l'écraser */
 *,
 h1,
 h2,
@@ -45,7 +44,6 @@ h2 {
     font-weight: 400;
 }
 
-/* ── Cards ── */
 .card {
     border: 1px solid var(--border) !important;
     border-radius: var(--radius) !important;
@@ -69,7 +67,6 @@ h2 {
     border-radius: 0 0 var(--radius) var(--radius);
 }
 
-/* Hauteur uniforme sur toutes les cards de la grille d'accueil */
 #row .card {
     height: 100%;
     display: flex;
@@ -105,7 +102,6 @@ h2 {
     display: block;
 }
 
-/* ── Lien retour ── */
 .home-link {
     color: var(--text-muted);
     text-decoration: none;
@@ -113,11 +109,10 @@ h2 {
 }
 
 .home-link:hover {
-    color: var(--accent);
-    text-decoration: underline;
+    color: var(--text);
+    text-decoration: none;
 }
 
-/* ── Page liste ── */
 #page-title {
     color: var(--text);
 }
