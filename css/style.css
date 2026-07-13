@@ -114,6 +114,14 @@ h2 {
     display: block;
 }
 
+.card-img-wrap--logo {
+    height: 100px;
+}
+
+.card-img-wrap--logo img {
+    max-width: 50%;
+}
+
 .home-link {
     color: var(--text-muted);
     text-decoration: none;
@@ -154,5 +162,13 @@ h2 {
 
     .card-img-wrap img {
         max-width: 65%;
+    }
+
+    .card-img-wrap--logo {
+        height: 80px;
+    }
+
+    .card-img-wrap--logo img {
+        max-width: 45%;
     }
 }

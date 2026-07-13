@@ -14,13 +14,13 @@ function createNewCard(cat) {
     let newLink = document.createElement("a");
     newLink.href = "#";
     newLink.className = "link-card";
-    newLink.onclick = function () { save(cat.name, cat.url); return false; }
+    newLink.onclick = function() { save(cat.name, cat.url); return false; }
 
     let newCard = document.createElement("div");
     newCard.className = "card h-100";
 
     let newImgWrap = document.createElement("div");
-    newImgWrap.className = "card-img-wrap";
+    newImgWrap.className = "card-img-wrap card-img-wrap--logo";
 
     let newCardImg = document.createElement("img");
     newCardImg.src = cat.url;

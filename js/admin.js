@@ -1,3 +1,4 @@
+// ── Auth ──
 const AUTH_KEY = 'adminAuth';
 
 function getAuthHeader() {
@@ -28,6 +29,7 @@ async function apiFetch(url, options = {}) {
     return res;
 }
 
+// ── Login ──
 const loginView = document.getElementById('login-view');
 const adminApp = document.getElementById('admin-app');
 const loginError = document.getElementById('login-error');
@@ -70,6 +72,7 @@ document.getElementById('login-submit').addEventListener('click', async () => {
     }
 });
 
+// Tente une reconnexion silencieuse si un token est déjà en session
 (async function initAuth() {
     const token = sessionStorage.getItem(AUTH_KEY);
     if (!token) return;
@@ -78,15 +81,19 @@ document.getElementById('login-submit').addEventListener('click', async () => {
         if (res.ok) showApp();
         else sessionStorage.removeItem(AUTH_KEY);
     } catch {
+        // reste sur l'écran de login
     }
 })();
 
+// ── Onglets (gérés par le plugin Tab de Bootstrap, on écoute juste le changement) ──
 document.getElementById('tab-items-btn').addEventListener('shown.bs.tab', () => {
     loadItems(document.getElementById('items-filter').value);
 });
 
+// ── État ──
 let categoriesCache = [];
 
+// ── Catégories ──
 async function loadCategories() {
     const res = await fetch('/api/categories');
     categoriesCache = await res.json();
@@ -113,7 +120,7 @@ function renderCategories() {
                 <button type="button" class="btn btn-sm btn-outline-danger delete-btn" title="Supprimer">✕</button>
             </div>
             <div class="card h-100">
-                <div class="card-img-wrap"><img src="${cat.url || ''}" alt="${cat.alt || ''}"></div>
+                <div class="card-img-wrap card-img-wrap--logo"><img src="${cat.url || ''}" alt="${cat.alt || ''}"></div>
                 <div class="card-body">
                     <h5 class="card-title">${cat.name}</h5>
                 </div>
@@ -206,6 +213,7 @@ document.getElementById('category-save-btn').addEventListener('click', async () 
         categoryModal.hide();
         await loadCategories();
     } catch {
+        // apiFetch a déjà géré le cas 401 / relogin
     }
 });
 
@@ -221,9 +229,11 @@ async function deleteCategory(cat) {
         }
         await loadCategories();
     } catch {
+        // géré par apiFetch
     }
 }
 
+// ── Items ──
 async function loadItems(platform) {
     const url = platform ? `/api/items?platform=${encodeURIComponent(platform)}` : '/api/items';
     const res = await fetch(url);
@@ -316,6 +326,7 @@ document.getElementById('item-save-btn').addEventListener('click', async () => {
         itemModal.hide();
         await loadItems(document.getElementById('items-filter').value);
     } catch {
+        // géré par apiFetch
     }
 });
 
@@ -331,9 +342,11 @@ async function deleteItem(item) {
         }
         await loadItems(document.getElementById('items-filter').value);
     } catch {
+        // géré par apiFetch
     }
 }
 
+// ── Aperçu image ──
 function updatePreview(inputId, previewId) {
     const url = document.getElementById(inputId).value.trim();
     const img = document.getElementById(previewId);
