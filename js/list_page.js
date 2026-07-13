@@ -8,41 +8,26 @@ function textUnderscoreMin(text) {
     return text.replace(/ /g, '_').toLowerCase();
 }
 
-var csvPlatform = textUnderscoreMin(platform)
+var csvPlatform = textUnderscoreMin(platform);
 
 var row = document.getElementById("row");
 var parentNoItems = document.getElementById("parent-no-items");
 
-var xhttp = new XMLHttpRequest();
-xhttp.onreadystatechange = readCSVFile;
-xhttp.open("GET", '../assets/csv/items.csv')
-xhttp.send();
-
-function readCSVFile() {
-    if (this.readyState == 4 && this.status == 200) {
-        var file = this.response
-        const contenuSansCR = file.replace(/\r/g, '');
-        const lignes = contenuSansCR.split('\n');
-        const tableauCSV = lignes.map(ligne => ligne.split(','));
-        array = tableauCSV;
-        var j = 0;
-        for (let i = 1; i < array.length; i++) {
-            if (array[i][0] == csvPlatform) {
-                createNewCard(array[i])
-                j++;
-            }
-        }
-        if (j == 0) {
+fetch('/api/items?platform=' + encodeURIComponent(csvPlatform))
+    .then(res => res.json())
+    .then(items => {
+        items.forEach(item => createNewCard(item));
+        if (items.length === 0) {
             let noItems = document.createElement("h3");
-            noItems.innerHTML = "Il n'y a pas d'éléments dans cette liste"
-            noItems.className = "text-center pt-5"
+            noItems.innerHTML = "Il n'y a pas d'éléments dans cette liste";
+            noItems.className = "text-center pt-5";
             parentNoItems.appendChild(noItems);
             row.remove();
         }
-    }
-};
+    })
+    .catch(err => console.error('Erreur de chargement des articles :', err));
 
-function createNewCard(array) {
+function createNewCard(item) {
     let newCol = document.createElement("div");
     newCol.className = "col";
 
@@ -50,29 +35,29 @@ function createNewCard(array) {
     newCard.className = "card h-100";
 
     let newCardImg = document.createElement("img");
-    newCardImg.src = array[4];
+    newCardImg.src = item.url;
     newCardImg.className = "img-card-size mt-3 mb-3";
-    newCardImg.alt = array[3];
+    newCardImg.alt = item.alt;
 
     let newCardBody = document.createElement("div");
     newCardBody.className = "card-body";
 
     let newCardTitle = document.createElement("h5");
     newCardTitle.className = "card-title";
-    newCardTitle.innerHTML = array[1];
+    newCardTitle.innerHTML = item.name;
 
     let newCardText = document.createElement("p");
-    newCardText.innerHTML = array[2];
+    newCardText.innerHTML = item.price;
 
     let newCardDate = null;
-    if (array[5] != undefined) {
+    if (item.date) {
         newCardDate = document.createElement("p");
-        newCardDate.innerHTML = "Sortie le " + array[5];
+        newCardDate.innerHTML = "Sortie le " + item.date;
     }
 
     newCardBody.appendChild(newCardTitle);
     newCardBody.appendChild(newCardText);
-    if (array[5] != undefined) {
+    if (item.date) {
         newCardBody.appendChild(newCardDate);
     }
     newCard.appendChild(newCardImg);

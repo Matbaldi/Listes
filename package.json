@@ -1,0 +1,15 @@
+{
+  "name": "liste-de-souhaits",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "migrate": "node scripts/migrate.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.45.4"
+  },
+  "devDependencies": {
+    "papaparse": "^5.4.1"
+  }
+}
