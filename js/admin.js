@@ -250,7 +250,7 @@ function renderItems(items) {
                 <button type="button" class="btn btn-sm btn-outline-danger delete-btn" title="Supprimer">✕</button>
             </div>
             <div class="card h-100">
-                <img src="${item.url.startsWith('./assets/images/') ? "." + item.url : item.url || ''}" class="img-card-size mt-3 mb-3" alt="${item.alt || ''}">
+                <img src="${item.url.startsWith('./assets/images/') ? "../." + item.url : item.url || ''}" class="img-card-size mt-3 mb-3" alt="${item.alt || ''}">
                 <div class="card-body">
                     <h5 class="card-title">${item.name}</h5>
                     <p class="card-text mb-0">${item.price || ''}</p>
