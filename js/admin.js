@@ -243,7 +243,7 @@ function renderItems(items) {
     items.forEach(item => {
         const col = document.createElement('div');
         col.className = 'col admin-card-wrapper';
-console.log(item);
+
         col.innerHTML = `
             <div class="admin-card-actions btn-group">
                 <button type="button" class="btn btn-sm btn-outline-secondary edit-btn" title="Modifier">✎</button>
