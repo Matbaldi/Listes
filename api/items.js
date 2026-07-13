@@ -1,32 +1,70 @@
 import { createClient } from '@supabase/supabase-js';
+import { requireAuth } from '../../lib/auth.js';
 
 const supabase = createClient(
   process.env.SUPABASE_URL,
-  process.env.SUPABASE_ANON_KEY
+  process.env.SUPABASE_SERVICE_ROLE_KEY
 );
 
 export default async function handler(req, res) {
-  if (req.method !== 'GET') {
-    return res.status(405).json({ error: 'Méthode non autorisée' });
+  if (!requireAuth(req, res)) return;
+
+  if (req.method === 'POST') {
+    const { platform, name, price, alt, url, date } = req.body || {};
+    if (!platform || !name) {
+      return res.status(400).json({ error: 'platform et name sont requis.' });
+    }
+
+    const { data, error } = await supabase
+      .from('items')
+      .insert({
+        platform,
+        name,
+        price: price || null,
+        alt: alt || null,
+        url: url || null,
+        date: date || null,
+      })
+      .select()
+      .single();
+
+    if (error) return res.status(500).json({ error: error.message });
+    return res.status(201).json(data);
   }
 
-  const { platform } = req.query;
+  if (req.method === 'PUT') {
+    const { id, platform, name, price, alt, url, date } = req.body || {};
+    if (!id) return res.status(400).json({ error: 'id est requis.' });
+    if (!platform || !name) {
+      return res.status(400).json({ error: 'platform et name sont requis.' });
+    }
 
-  let query = supabase
-    .from('items')
-    .select('id, platform, name, price, alt, url, date')
-    .order('id', { ascending: true });
+    const { data, error } = await supabase
+      .from('items')
+      .update({
+        platform,
+        name,
+        price: price || null,
+        alt: alt || null,
+        url: url || null,
+        date: date || null,
+      })
+      .eq('id', id)
+      .select()
+      .single();
 
-  if (platform) {
-    query = query.eq('platform', platform);
+    if (error) return res.status(500).json({ error: error.message });
+    return res.status(200).json(data);
   }
 
-  const { data, error } = await query;
+  if (req.method === 'DELETE') {
+    const { id } = req.query;
+    if (!id) return res.status(400).json({ error: 'id est requis.' });
 
-  if (error) {
-    return res.status(500).json({ error: error.message });
+    const { error } = await supabase.from('items').delete().eq('id', id);
+    if (error) return res.status(500).json({ error: error.message });
+    return res.status(204).end();
   }
 
-  res.setHeader('Cache-Control', 's-maxage=60, stale-while-revalidate=300');
-  return res.status(200).json(data);
+  return res.status(405).json({ error: 'Méthode non autorisée.' });
 }
