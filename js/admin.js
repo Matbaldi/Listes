@@ -120,7 +120,7 @@ function renderCategories() {
                 <button type="button" class="btn btn-sm btn-outline-danger delete-btn" title="Supprimer">✕</button>
             </div>
             <div class="card h-100">
-                <div class="card-img-wrap card-img-wrap--logo"><img src="${cat.url || ''}" alt="${cat.alt || ''}"></div>
+                <img src="${cat.url || ''}" class="img-card-size img-card-size--logo mt-3 mb-3" alt="${cat.alt || ''}">
                 <div class="card-body">
                     <h5 class="card-title">${cat.name}</h5>
                 </div>
@@ -260,7 +260,7 @@ function renderItems(items) {
                 <button type="button" class="btn btn-sm btn-outline-danger delete-btn" title="Supprimer">✕</button>
             </div>
             <div class="card h-100">
-                <div class="card-img-wrap"><img src="${item.url || ''}" alt="${item.alt || ''}"></div>
+                <img src="${item.url || ''}" class="img-card-size mt-3 mb-3" alt="${item.alt || ''}">
                 <div class="card-body">
                     <h5 class="card-title">${item.name}</h5>
                     <p class="card-text mb-0">${item.price || ''}</p>

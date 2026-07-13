@@ -19,13 +19,10 @@ function createNewCard(cat) {
     let newCard = document.createElement("div");
     newCard.className = "card h-100";
 
-    let newImgWrap = document.createElement("div");
-    newImgWrap.className = "card-img-wrap card-img-wrap--logo";
-
     let newCardImg = document.createElement("img");
     newCardImg.src = cat.url;
+    newCardImg.className = "img-card-size img-card-size--logo mt-3 mb-3";
     newCardImg.alt = cat.alt;
-    newImgWrap.appendChild(newCardImg);
 
     let newCardBody = document.createElement("div");
     newCardBody.className = "card-body";
@@ -35,7 +32,7 @@ function createNewCard(cat) {
     newCardTitle.innerHTML = cat.name;
 
     newCardBody.appendChild(newCardTitle);
-    newCard.appendChild(newImgWrap);
+    newCard.appendChild(newCardImg);
     newCard.appendChild(newCardBody);
     newLink.appendChild(newCard);
     newCol.appendChild(newLink);
