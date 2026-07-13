@@ -2,7 +2,9 @@ var platform = sessionStorage.getItem('choice');
 var img = sessionStorage.getItem('img');
 
 document.getElementById("page-title").innerHTML = platform;
-document.getElementById("img-list").src = "." + img;
+var imgList = document.getElementById("img-list");
+imgList.src = "." + img;
+imgList.classList.add("hero-img");
 
 function textUnderscoreMin(text) {
     return text.replace(/ /g, '_').toLowerCase();
@@ -34,10 +36,13 @@ function createNewCard(item) {
     let newCard = document.createElement("div");
     newCard.className = "card h-100";
 
+    let newImgWrap = document.createElement("div");
+    newImgWrap.className = "card-img-wrap";
+
     let newCardImg = document.createElement("img");
     newCardImg.src = item.url;
-    newCardImg.className = "img-card-size mt-3 mb-3";
     newCardImg.alt = item.alt;
+    newImgWrap.appendChild(newCardImg);
 
     let newCardBody = document.createElement("div");
     newCardBody.className = "card-body";
@@ -60,7 +65,7 @@ function createNewCard(item) {
     if (item.date) {
         newCardBody.appendChild(newCardDate);
     }
-    newCard.appendChild(newCardImg);
+    newCard.appendChild(newImgWrap);
     newCard.appendChild(newCardBody);
     newCol.appendChild(newCard);
     row.appendChild(newCol);
